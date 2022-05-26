@@ -58,8 +58,6 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#set-up">Set Up</a></li>
-        <li><a href="#running-clotho">Running Clotho</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -110,10 +108,6 @@ You'll need to have at least Python 3.7 installed, but that's pretty much it.
    pip install -r requirements.txt
    ```
 
-### Running Auto-Clicker
-
-1.
-
 <!-- USAGE EXAMPLES -->
 
 ## Usage
@@ -144,12 +138,6 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the GPL 2.0 License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 
