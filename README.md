@@ -64,7 +64,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#author">Author</a></li>
   </ol>
 </details>
@@ -111,6 +110,14 @@ You'll need to have at least Python 3.7 installed, but that's pretty much it.
 <!-- USAGE EXAMPLES -->
 
 ## Usage
+
+To run this locally, after performing all of the installation steps, you can run it as you would any other Python script.
+
+```sh
+python auto-clicker/auto-clicker.py
+```
+
+Press the <keyboard>s</keyboard> key to start and stop the auto-clicker, and press the <keyboard>e</keyboard> key to exit the auto-clicker script completely.
 
 <!-- ROADMAP -->
 
