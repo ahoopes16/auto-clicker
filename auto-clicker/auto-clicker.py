@@ -1,3 +1,5 @@
+# This is based off the code example found at https://nitratine.net/blog/post/python-auto-clicker/#final-code
+
 import time
 import threading
 from pynput.mouse import Button, Controller
