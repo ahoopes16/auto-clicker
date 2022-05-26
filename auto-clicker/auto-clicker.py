@@ -1,11 +1,14 @@
 # This is based off the code example found at https://nitratine.net/blog/post/python-auto-clicker/#final-code
 
-import time
-import threading
 from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, KeyCode
+from random import uniform
+import time
+import threading
 
-delay = 0.001
+
+max_delay_seconds = 10
+min_delay_seconds = 0
 button = Button.left
 start_stop_key = KeyCode(char='s')
 exit_key = KeyCode(char='e')
@@ -13,9 +16,10 @@ mouse = Controller()
 
 
 class ClickMouse(threading.Thread):
-    def __init__(self, delay, button):
+    def __init__(self, min_delay, max_delay, button):
         super(ClickMouse, self).__init__()
-        self.delay = delay
+        self.min_delay = min_delay
+        self.max_delay = max_delay
         self.button = button
         self.running = False
         self.program_running = True
@@ -34,11 +38,13 @@ class ClickMouse(threading.Thread):
         while self.program_running:
             while self.running:
                 mouse.click(self.button)
-                time.sleep(self.delay)
+                delay = round(uniform(self.min_delay, self.max_delay), 2)
+                time.sleep(delay)
             time.sleep(0.1)
 
 
-click_thread = ClickMouse(delay, button)
+click_thread = ClickMouse(
+    min_delay_seconds, max_delay_seconds, button)
 click_thread.start()
 
 
