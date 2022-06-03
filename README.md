@@ -62,9 +62,11 @@
     </li>
     <li>
       <a href="#usage">Usage</a>
+      <ul>
         <li><a href="#running-locally">Running Locally</a></li>
         <li><a href="#prerequisites">Executable</a></li>
         <li><a href="#prerequisites">Configuration</a></li>
+      </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#faq">FAQ</a></li>
