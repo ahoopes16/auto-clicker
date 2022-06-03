@@ -60,7 +60,12 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#usage">Usage</a>
+        <li><a href="#running-locally">Running Locally</a></li>
+        <li><a href="#prerequisites">Executable</a></li>
+        <li><a href="#prerequisites">Configuration</a></li>
+    </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -81,8 +86,6 @@ One of my friends wanted an auto-clicker for a personal project, and it seemed e
 <!-- GETTING STARTED -->
 
 ## Getting Started
-
-As of right now, I don't have this bot hosted anywhere for public use. To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
@@ -111,6 +114,8 @@ You'll need to have at least Python 3.7 installed, but that's pretty much it.
 
 ## Usage
 
+### Running Locally
+
 To run this locally, after performing all of the installation steps, you can run it as you would any other Python script.
 
 ```sh
@@ -118,6 +123,16 @@ python auto-clicker/auto-clicker.py
 ```
 
 Press the <kbd>s</kbd> key to start and stop the auto-clicker, and press the <kbd>e</kbd> key to exit the auto-clicker script completely.
+
+### Executable
+
+Alternatively, if you don't want to do all that work, you can download the executable file from the releases on GitHub!
+
+### Configuration
+
+For both the local version and the executable, you can create a `settings.ini` file in the same directory you're running the script from to easily configure the minimum and maximum click delay. Take a look at the `settings.ini` file in the root directory of this project to see how to set it up (or just use that one).
+
+If no `settings.ini` file can be found, it will default to a minimum delay of 0 seconds and a maximum delay of 10 seconds.
 
 <!-- ROADMAP -->
 

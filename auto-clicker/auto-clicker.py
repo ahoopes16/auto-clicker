@@ -1,14 +1,23 @@
 # This is based off the code example found at https://nitratine.net/blog/post/python-auto-clicker/#final-code
 
+from configparser import ConfigParser
 from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, KeyCode
 from random import uniform
 import time
 import threading
 
+settings = {"max_delay_seconds": 10, "min_delay_seconds": 0}
+try:
+    config = ConfigParser()
+    config.read('settings.ini')
+    settings['max_delay_seconds'] = config.getint(
+        'DEFAULT', 'max_delay_seconds')
+    settings['min_delay_seconds'] = config.getint(
+        'DEFAULT', 'min_delay_seconds')
+except Exception as e:
+    print('Could not read configuration file. Continuing with default settings.' + e)
 
-max_delay_seconds = 10
-min_delay_seconds = 0
 button = Button.left
 start_stop_key = KeyCode(char='s')
 exit_key = KeyCode(char='e')
@@ -44,7 +53,7 @@ class ClickMouse(threading.Thread):
 
 
 click_thread = ClickMouse(
-    min_delay_seconds, max_delay_seconds, button)
+    settings['min_delay_seconds'], settings['max_delay_seconds'], button)
 click_thread.start()
 
 
