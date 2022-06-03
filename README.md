@@ -122,7 +122,7 @@ To run this locally, after performing all of the installation steps, you can run
 python auto-clicker/auto-clicker.py
 ```
 
-Press the <kbd>s</kbd> key to start and stop the auto-clicker, and press the <kbd>e</kbd> key to exit the auto-clicker script completely.
+Press the <kbd>9</kbd> key to start and stop the auto-clicker, and press the <kbd>0</kbd> key to exit the auto-clicker script completely.
 
 ### Executable
 

@@ -19,8 +19,8 @@ except Exception as e:
     print('Could not read configuration file. Continuing with default settings.' + e)
 
 button = Button.left
-start_stop_key = KeyCode(char='s')
-exit_key = KeyCode(char='e')
+start_stop_key = KeyCode(char='9')
+exit_key = KeyCode(char='0')
 mouse = Controller()
 
 
